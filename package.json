@@ -1,0 +1,26 @@
+{
+  "name": "react-polls",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alesitalugo/react-polls.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alesitalugo/react-polls/issues"
+  },
+  "homepage": "https://github.com/alesitalugo/react-polls#readme",
+  "dependencies": {
+    "bootstrap": "^3.3.6",
+    "express": "^4.13.4",
+    "moment": "^2.12.0"
+  }
+}
