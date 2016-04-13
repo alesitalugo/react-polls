@@ -1,7 +1,8 @@
 const React = require('react')
 const Header = React.createClass({
   propTypes: {
-    title: React.PropTypes.string.isRequired
+    title: React.PropTypes.string.isRequired,
+    status: React.PropTypes.string.isRequired
   },
   getDefaultProps () {
     return {
