@@ -1,1 +1,13 @@
-
+#connection-status {
+  display: block;
+  margin: 10px;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+#connection-status.connected{
+  background-color: green;
+}
+#connection-status.disconnected{
+  background-color: red;
+}

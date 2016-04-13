@@ -3,15 +3,27 @@ const io = require('socket.io-client')
 const Header = require('./parts/Header')
 
 const App = React.createClass({
+  getInitialState () {
+    return {
+      status: 'disconnected'
+    }
+  },
   componentWillMount () {
     this.socket = io('http://localhost:3000')
     this.socket.on('connect', this.connect)
   },
   connect () {
-    alert(`conected ${this.socket.id}`)
+    this.setState({status: 'connected'})
   },
   render () {
-    return (<div><Header title='Hello World'/></div>)
+    return (
+      <div>
+        <Header
+          title='Hello World'
+          status={this.state.status}
+        />
+      </div>
+    )
   }
 })
 
