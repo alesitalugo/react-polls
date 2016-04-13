@@ -7,10 +7,13 @@ class Audience extends React.Component {
   render () {
     return (
       <div>
-        <h2>Audience</h2>
+        <h2>Audience: {this.props.state.title} </h2>
       </div>
     )
   }
+}
+Audience.propTypes = {
+  state: React.PropTypes.object
 }
 
 export default Audience
