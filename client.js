@@ -6,12 +6,14 @@ import App from './components/App'
 import Audience from './components/Audience'
 import Board from './components/Board'
 import Speaker from './components/Speaker'
+import Notfound from './components/Notfound'
 
 const routes = (
   <Route component={App}>
     <Route path='/' component={Audience} />
     <Route path='board' component={Board} />
     <Route path='speaker' component={Speaker} />
+    <Route path='*' component={Notfound} />
   </Route>
 )
 
