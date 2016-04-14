@@ -1,4 +1,5 @@
 import React from 'react'
+import Join from './parts/Join'
 
 class Audience extends React.Component {
   constructor (props) {
@@ -7,13 +8,15 @@ class Audience extends React.Component {
   render () {
     return (
       <div>
-        <h2>Audience: {this.props.state.title} </h2>
+        <h2>Audience: {this.props.title} </h2>
+        { this.props.status === 'connected' ? <Join /> : null }
       </div>
     )
   }
 }
 Audience.propTypes = {
-  state: React.PropTypes.object
+  title: React.PropTypes.string,
+  status: React.PropTypes.string
 }
 
 export default Audience

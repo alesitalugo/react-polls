@@ -35,7 +35,7 @@ class App extends React.Component {
           title={this.state.title}
           status={this.state.status}
         />
-      {React.cloneElement(this.props.children, {state: this.state}) }
+      {React.cloneElement(this.props.children, this.state) }
       </div>
     )
   }
